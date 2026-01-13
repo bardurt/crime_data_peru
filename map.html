@@ -39,7 +39,7 @@
             data.forEach(row => {
               const [date, crime_type, victim_gender, lat, lng] = row;
               L.circleMarker([parseFloat(lat), parseFloat(lng)], {
-                radius: 5,
+                radius: 2,
                 color: 'red',
                 fillOpacity: 0.7
               }).bindPopup(`
